@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulir</title>
+    </head>
+    <body> 
+        <h2>Formulir Pendaftaran</h2>
+        <form action="daftar anggota.php" method="post">
+            <table border="1" rules="all" cellpadding="5">
+                <tr>
+                    <td>Nama:</td>
+                    <td>
+                        <input type="text" name="nama_lengkap">
+                    </td>
+                </tr>
+                <tr>
+                    <td>TTL:</td>
+                    <td>
+                        <input type="date" name="tanggal">
+                    </td>
+                </tr>
+                <tr>
+                    <form action="jenis_kelamin.php" method="post">
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="gender" value="Laki-laki">
+                            <input type="radio" name="gender" value="Perempuan">
+                        </td>
+                    </form>
+                </tr>
+                <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Konfirmasi Password</td>
+                    <td>
+                        <input type="password" name="konfirmasi_password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea cols="20" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <form action="#">
+                    <td>Provinsi</td>
+                    <td>
+                        <select name="provinsi">
+                            <option value="Jawa Timur">Jawa Timur</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="Jawa Barat"> Jawa Barat</option>
+                        </select>
+                    </td>
+                    </form>
+                </tr>
+                <tr>
+                    <form action="#">
+                        <td>Negara</td>
+                        <td>
+                            <select name="negara">
+                                <option value="Filipina">Filipina</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Thailand">Thailand</option>
+                            </select>
+                        </td>
+                    </form>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="persetujuan.php" method="post"></form>
+                        <input type="checkbox" name="persetujuan" value="Saya setuju dengan aturan privasi">Saya setuju dengan aturan privasi
+                        
+                    </td>
+                </tr>
+            </table>
+        
+            <br><br>
+            
+            <button type="button" style="width: 15%; padding: 14px 20px; background-color: #f44336; float: left;"><a href="login.html">Cancel</a></button>
+            <button type="button" style="width: 15%; padding: 14px 20px; background-color: #36f45f; float: left;"><a href="../simple web/index.hjtml">Daftar</a></button>
+        
+        </form>
+    </body>
+</html>
